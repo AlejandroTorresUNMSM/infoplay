@@ -1,0 +1,54 @@
+/****
+https://programacion.net/articulo/como_hacer_un_footer_fijo_sin_morir_en_el_intento_1669
+***/
+
+/*** flex: 0 0 auto;
+flex-grow: Define cuanto espacio libre disponible en el contenedor irá destinado a un elemento.
+flex-shrink: Cuanto se reducirá un elemento cuando no hay suficiente espacio para todo
+flex-basis: El tamaño por defecto de un elemento
+**/
+
+/**importante 100% para que tome todo el tamaño de la pagina**/
+html{
+    height: 100%;
+    width: 100%;
+    
+    margin: 0;
+   padding: 0;
+
+}
+
+/**importante 100% para que tome todo el tamaño de la pagina**/
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    /* We want the header to have a static height, 
+    it will always take up just as much space as it needs.  */
+    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 0 0 auto;
+ }
+
+ .main-content{
+    /* By setting flex-grow to 1, the main content will take up 
+    all of the remaining space on the page. 
+    The other elements have flex-grow: 0 and won't contest the free space. */
+    /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 1 0 auto;
+    width: 100%;
+ }
+
+
+ footer{
+    /* Like the header, the footer will have a static height - it shouldn't grow or shrink.  */
+    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 0 0 auto;
+    width: 100%;
+ }

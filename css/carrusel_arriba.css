@@ -1,0 +1,159 @@
+.body{
+    width: 100%;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.carrusel{
+    position: relative;
+    max-width: 1000px;
+    width: 50%;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.slide{
+    background: royalblue;
+    display: flex;
+    transform: translate3d(0,0,0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 6.5s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+
+.item-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+
+}
+
+.pagination{
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pagination-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+}
+
+img{
+    width: 100%;
+}
+
+.pagination-item:hover{
+    transform: scale(2);
+}
+
+.pagination-item img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.pagination-item:hover img{
+    opacity: 1;
+    transform: scale(1);
+}
+
+/**cuando el input con id 1 este en checked 
+    el slide 
+
+**/
+input[id="1"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0,0,0);
+}
+
+/*cuando seleccionemos una imagen el boton input se ponga blanco*/
+input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
+    background: white;
+}
+
+
+input[id="2"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 1),0,0);
+}
+
+/*cuando seleccionemos una imagen el boton input se ponga blanco*/
+input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
+    background: white;
+}
+
+input[id="3"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 2),0,0);
+}
+
+/*cuando seleccionemos una imagen el boton input se ponga blanco*/
+input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
+    background: white;
+}
+
+/**keyframe se usa para crear una animacion  */
+/*duracion 6.5s son 3 imagenes : 100/3=33.3 **/
+/**animacion que nombramos arriba*/
+@keyframes autoplay{
+    33%{
+        transform: translate3d(calc(-100% * 0),0,0);
+    }
+
+    66%{
+        transform: translate3d(calc( -100% * 1),0,0);
+    }
+
+    100%{
+        transform: translate3d(calc(-100% * 2),0,0);
+    }
+}
+
+
+.centrado{
+    text-align: left;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: seashell;
+    background: rgba(173, 46, 46, 0.8);
+    font-size: 20px;
+}
+
+.centrado a{
+    color: white;
+    font-size: 15px;
+}

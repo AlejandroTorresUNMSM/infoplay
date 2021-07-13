@@ -1,0 +1,62 @@
+
+#enviar_mensaje{
+    /*****
+    background: url("https://www.iniseg.es/blog/seguridad/wp-content/uploads/2018/06/Blog-Aucal-41-820x410.png") ;
+    background-size: cover;
+    ***/
+    background: rgb(110, 41, 28);
+    color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+#contenedor_buzon{
+    width: 100%;
+}
+
+#enviar_mensaje form{
+    float: left;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#enviar_mensaje img{
+    float: right;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#enviar_mensaje i{
+    float: right;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 80px;
+}
+
+
+
+#buzon_enviar{
+    background: transparent;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 12px;
+    width: 100px;
+}
+
+#buzon_enviar:hover{
+    background: rgb(255, 255, 255,0.1);
+}
+
+
+#buzon_email{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 250px;
+    color: white;
+  }
+
+::placeholder { color: white; }

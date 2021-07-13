@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infoyplay</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/buzon.css">
+    <link rel="stylesheet" href="css/posicion_footer.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/carrusel_arriba.css">
+    <link rel="stylesheet" href="css/card_arriba.css">
+    <link rel="stylesheet" href="css/buscador.css">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+
+
+</head>
+<body>
+    <header>
+        <div id="contenedor">
+            <h2><i class="fas fa-film"></i>  Infoyplan</h2>
+
+            <!--
+
+            <i class="fas fa-search" id="icon_buscador"></i>
+            <input type="search" id="search" placeholder="Evento , equipo o artista" />
+            -->
+            <div class="search-box">
+                <span class="icon"><i class="fa fa-search"></i></span>
+                <input type="search" id="search" placeholder="Buscando..." />
+            </div>
+            <nav class="redes">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </nav>
+        </div>    
+    </header>
+
+    <br><br>
+
+    <div class="main-content">
+
+        <section class="encabezado">
+            <div class="carrusel">
+            
+                <input type="radio" id="1" name="image-slice" hidden>
+                <input type="radio" id="2" name="image-slice" hidden>
+                <input type="radio" id="3" name="image-slice" hidden>
+                <div class="slide">
+                    <div class="item-slide">
+                        <img src="img/carrusel_01.jpg">
+                        <div class="centrado">
+                            Otaku Day <br> 8 Octubre <br>
+                            <a href="#">Conoce mas ></a>
+                        </div>
+                    </div>
+                    <div class="item-slide">
+                        <img src="img/carrusel_02.jpg">
+                        <div class="centrado">
+                            Friki Fest <br> 15 Enero <br>
+                            <a href="#">Conoce mas ></a>
+                        </div>
+                    </div>
+                    <div class="item-slide">
+                        <img src="img/carrusel_03.jpg">
+                        <div class="centrado">
+                            PokeDay <br> 30 Diciembre <br>
+                            <a href="#">Conoce mas ></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pagination">
+                    <label for="1" class="pagination-item">
+                        <img src="img/carrusel_01.jpg">
+                    </label>
+                    <label for="2" class="pagination-item">
+                        <img src="img/carrusel_02.jpg">
+                    </label>
+                    <label for="3" class="pagination-item">
+                        <img src="img/carrusel_03.jpg">
+                    </label>
+                </div>
+                
+            </div>
+            <div class="card_arriba">
+                
+                <div class="card">
+                    <img src="img/card_micro.jpg">
+                    <p>Musica</p>
+                    <a href="#">10 Eventos</a>
+                </div>
+
+                <div class="card">
+                    <img src="img/card_popcorn.jpg">
+                    <p>Comidas</p>
+                    <a href="#">10 Eventos</a>
+                </div>
+               
+                <div class="card">
+                    <img src="img/card_teatro.jpg">
+                    <p>Teatro</p>
+                    <a href="#">10 Eventos</a>
+                </div>
+
+                <div class="card">
+                    <img src="img/card_libro.jpg">
+                    <p>Cultura</p>
+                    <a href="#">10 Eventos</a>
+                </div>
+            
+            
+
+            </div>
+        </section>
+
+        <section class="listas">
+            <div class="dropdown">
+                <button class="dropbtn"><i class="far fa-hand-spock"></i> Eventos en Linea</button>
+                <div class="dropdown-content">
+                  <a href="#">Linea</a>
+                  <a href="#">Proximamente</a>
+                  <a href="#">Caducos</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-landmark"></i> Desde Hoy</button>
+                <div class="dropdown-content">
+                  <a href="#">Linea</a>
+                  <a href="#">Proximamente</a>
+                  <a href="#">Caducos</a>
+                </div>
+            </div>
+        </section>
+            <br><br>
+        <section id="noticias">
+            <div>
+                carrusel de imagenes de eventos <br>
+            </div>
+            <div>
+                4 card de tag <br>
+            </div>
+        </section>
+    
+        <section id="carrusel_card">
+            <div>
+                <h2>Descubre lo que sucede en Linea</h2>
+                <div id="cards">
+                    <br><br>
+                </div>
+            </div>
+        </section>
+    
+        <section id="enviar_mensaje">
+            <div id="contenedor_buzon">
+                <form action="#">
+                    <h2>Te perderas de los mejores eventos?</h2><br>
+                    <input id="buzon_email" type="email" placeholder="Dejanos tu correo y te avisamos">
+                    <input id="buzon_enviar" type="submit" value="Enviar">
+                </form>
+                <i class="fas fa-shipping-fast"></i>
+                
+            </div>    
+        </section>
+
+
+    </div>
+
+    
+
+    <!--
+    <footer>
+        <div id="contenedor_footer">
+            <h3>Copyright 2021 Infoyplay</h3>
+            <div class="redes_abajo">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#" id="reclamos"> | </a>
+                <a href="#" id="reclamos"></i>Libro de reclamaciones</a>
+            </div>
+        </div>
+        
+    </footer>
+    -->
+
+    <footer>
+        <div id="contenedor_footer">
+            <div class="footer_arriba">
+                <div class="col1">
+                    <h3>Conocenos</h3>
+                    <div class="row">
+                        <i class="fas fa-sticky-note"></i>
+                        <a href="#">Acerca de nosotros</a>
+                    </div>
+                    
+                </div>
+                <div class="col2">
+                    <h3>¿Necesitas ayuda?</h3>
+                    <div class="row">
+                        <i class="fas fa-question-circle"></i>
+                        <a href="#">Preguntas frecuentes</a><br>
+                    </div>
+                    <div class="row">
+                        <i class="far fa-address-book"></i>
+                        <a href="#">Contactanos</a>
+                    </div>
+                    
+                    
+                </div>
+                <div class="col3">
+                    <h3>Politicas</h3>
+                    <div class="row">
+                        <i class="fas fa-user-lock"></i>
+                        <a href="#">  Politica de privacidad</a><br>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-cookie"></i>
+                        <a href="#">  Politica de cookies</a><br>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-users"></i>
+                        <a href="#">  Terminos y condiciones de uso</a>
+                    </div>
+                    
+                </div>
+                <div class="col4">
+                    <h3>Contactanos</h3>
+                    <div class="row">
+                        <p>Escribenos a nuestra casilla de correo:</p>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-mail-bulk"></i>
+                        <p>contacto@infoyplan.com</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="footer_abajo">
+                <div class="row2">
+                    <br>
+                    <p>Copyright © 2021 Infoyplan</p>
+                </div>
+                <div class="row2">
+                    <!-- lista horizontal de redes , facebook,twitter,youtube,instagram -->
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="row2">
+                    <!--icono de libro arriba-->
+                    <a href="#"><i class="fas fa-book"></i>Libro de reclamaciones</a>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
